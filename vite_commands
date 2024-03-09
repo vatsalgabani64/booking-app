@@ -1,0 +1,6 @@
+npm create vite@latest client
+cd client
+npm install
+npm run dev
+
+//tailwindcss - follow https://tailwindcss.com/docs/guides/vite

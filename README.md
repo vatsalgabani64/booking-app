@@ -1,0 +1,1 @@
+A property rental service application made using MERN stack.
