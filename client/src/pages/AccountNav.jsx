@@ -1,7 +1,4 @@
-import { useContext, useState } from "react";
-import { UserContext } from "../UserContext";
 import {Link,useLocation} from 'react-router-dom';
-import axios from "axios";
 
 export default function AccountNav(){
     const {pathname} = useLocation();

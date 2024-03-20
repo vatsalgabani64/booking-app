@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import {Link,Navigate,useParams} from 'react-router-dom';
-import Perks from '../Perks';
+import {Navigate,useParams} from 'react-router-dom';
+import Perks from '../components/Perks';
 import axios from 'axios';
-import PhotosUploader from '../PhotosUploader';
+import PhotosUploader from '../components/PhotosUploader';
 import AccountNav from './AccountNav';
 
 
@@ -51,7 +51,6 @@ export default function PlacesFormPage(){
     }
 
     function preInput(header,description){
-        // console.log(addedPhotos);
         return(
             <>
             {inputHeader(header)}
@@ -108,7 +107,6 @@ export default function PlacesFormPage(){
                         </div>
                         {preInput("Extra Info","House Rules,etc.")}
                         <textarea value={extraInfo} onChange={ev => setExtraInfo(ev.target.value)} ></textarea>
-                        {/* {preInput("Check in & out times, max guests","add check in and out times, remember to have some time window for cleaning the room between guests")} */}
                         <h2 className='text-2xl mt-4'>Check in & out times, max guests</h2>
                         <p className='text-gray-500 text-sm'>add check in and out times, remember to have some time window for cleaning the room between guests</p>
                         <div className='grid gap-2 grid-cols-2 md:grid-cols-4 '>

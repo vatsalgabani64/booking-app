@@ -17,6 +17,9 @@ temp
 TODOs.md
 .eslintcache
 
+#Images
+api/uploads
+
 # Logs
 logs
 *.log

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import {Link} from 'react-router-dom';
-import { UserContext } from './UserContext';
+import { UserContext } from '../UserContext';
 
 export default function Header() {
   const {user} = useContext(UserContext);   //userContext --> user,setUser
@@ -24,14 +24,13 @@ export default function Header() {
 
         <span className="font-bold text-xl">airbnb</span>
       </Link>
-      {/* sm:inline-flex hidden */}
       <div className="flex gap-2 border border-gray-300 rounded-full py-2 px-4 shadow-md shadow-gray-300">
         <div>Anywhere</div>
         <div className="border-l border-gray-300"></div>
         <div>Any Week</div>
         <div className="border-l border-gray-300"></div>
         <div>Any Guests</div>
-        <button className="bg-primary text-white p-1 rounded-full">
+        {/* <button className="bg-primary text-white p-1 rounded-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -46,7 +45,7 @@ export default function Header() {
               d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
             />
           </svg>
-        </button>
+        </button> */}
       </div>
 
       <Link

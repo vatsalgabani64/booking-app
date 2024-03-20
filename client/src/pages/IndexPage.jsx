@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom';
-import Header from '../Header';
 import axios from 'axios';
 import { useEffect,useState } from 'react';
 
@@ -24,7 +23,7 @@ export default function IndexPage() {
           <h2 className='font-bold '>{place.address}</h2>
           <h3 className='text-sm truncate text-gray-500'>{place.title}</h3>
           <div className="mt-1">
-            <span className="font-bold">${place.price}</span> per night
+            <span className="font-bold">₹{place.price}</span> per night
           </div>
         </Link>
       ))}

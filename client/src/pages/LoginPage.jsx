@@ -19,9 +19,7 @@ export default function LoginPage() {
       }); //withCredentials used to accept cookies
       setUser(data);  //axios.post return many values we need only data part
       setRedirect(true);
-      alert("Login Successful");
     } catch (e) {
-      // console.log(e);
       alert("Login Failed");
     }
   }
@@ -43,7 +41,7 @@ export default function LoginPage() {
           />
           <input
             type="password"
-            placeholder="passowrd"
+            placeholder="password"
             value={password}
             onChange={(ev) => setPassword(ev.target.value)}
           />

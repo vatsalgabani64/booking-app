@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import {Navigate} from 'react-router-dom';
 
 export default function RegisterPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [redirect,setRedirect] = useState(false);
 
   async function registerUser(ev){
     ev.preventDefault();
@@ -15,10 +17,15 @@ export default function RegisterPage() {
         email,
         password
       });
-      alert('registration successful. Now you can log in.');
+      setRedirect(true);
+      // alert('registration successful. Now you can log in.');
     }catch(e){
       alert('registration failed. Please try again later.');
     }
+  }
+
+  if(redirect){
+    return <Navigate to = {"/login"} />
   }
 
   return (
@@ -40,7 +47,7 @@ export default function RegisterPage() {
           />
           <input
             type="password"
-            placeholder="passowrd"
+            placeholder="password"
             value={password}
             onChange={(ev) => setPassword(ev.target.value)}
           />
