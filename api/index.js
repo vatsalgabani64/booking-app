@@ -14,7 +14,7 @@ require('dotenv').config()
 const app = express();
 
 const bcryptSalt = bcrypt.genSaltSync(10);
-const jwtSecret = 'bjhkdajsdajbdajbdajs';
+const jwtSecret = process.env.JWT_SECRET;
 
 app.use(express.json());
 app.use(cookieParser());
@@ -25,7 +25,6 @@ app.use(cors({
     credentials:true,
     origin:'http://127.0.0.1:5173',
 }));    
-//VGlwi0tIRM8lHNMC
 
  mongoose.connect(process.env.MONGO_URL);
 
