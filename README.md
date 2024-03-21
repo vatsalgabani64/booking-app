@@ -73,6 +73,28 @@ To run the Booking App on your local environment, follow the instructions below.
 
 4. Access the application in your browser at http://127.0.0.1:5173/
 
+# Screenshots of the Project:
+
+## Home Page
+![Screenshot 2024-03-21 173859](https://github.com/vatsalgabani64/booking-app/assets/122713645/d393d333-9699-444e-9b68-63cccdd3a492)
+
+## Client Bookings
+![Screenshot 2024-03-20 231758](https://github.com/vatsalgabani64/booking-app/assets/122713645/2887cc74-212a-4f58-89b3-98f1314a7e8a)
+
+## Properties listed by Host
+
+![Screenshot 2024-03-20 230847](https://github.com/vatsalgabani64/booking-app/assets/122713645/8c70eb3b-9619-42a9-a2c7-dc8702d900d4)
+
+## Property Description Page
+
+![Screenshot 2024-03-21 174337](https://github.com/vatsalgabani64/booking-app/assets/122713645/5bc1d4a4-0be6-40ea-ba45-c6abe3179120)
+![Screenshot 2024-03-21 174410](https://github.com/vatsalgabani64/booking-app/assets/122713645/6f363d00-f879-43f0-b354-9be444550c17)
+
+## Registration Page
+
+![Screenshot 2024-03-20 224858](https://github.com/vatsalgabani64/booking-app/assets/122713645/d32c841d-a5f3-4382-9636-0b9cce1ad91a)
+
+#
 
 
 
